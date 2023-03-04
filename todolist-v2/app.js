@@ -14,6 +14,7 @@ app.use(express.static("public"));
 
 mongoose.set("strictQuery", false);
 mongoose.connect('mongodb://127.0.0.1:27017/todolistDB');
+// mongoose.connect('mongodb+srv://admin-tanya:<password>@cluster0.yfdqgkb.mongodb.net/todolistDB');
 
 const itemsSchema = new mongoose.Schema({
   name: String
