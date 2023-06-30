@@ -30,6 +30,7 @@ function App() {
     const {value, name} = event.target;
 
     setFullName((prevValue) => {
+      /*
       if (name === "fName") {
         return {
           fName: value,
@@ -40,6 +41,12 @@ function App() {
           fName: prevValue.fName,
           lName: value
         }
+      }
+      */
+
+      return {
+        ...prevValue,
+        [name]: value
       }
 
     })
